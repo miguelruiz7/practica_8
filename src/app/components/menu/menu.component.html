@@ -1,0 +1,9 @@
+<header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+      <!-- <li class="nav-item"><a href="inicio" class="nav-link">Inicio</a></li>
+      <li class="nav-item"><a href="contacto" class="nav-link">Contacto</a></li>
+      <li class="nav-item"><a href="galeria" class="nav-link">Galeria</a></li>
+      <li class="nav-item"><a href="acerca" class="nav-link">Acerca de</a></li> -->
+      <li [routerLink]="ruta.Path" *ngFor="let ruta of rutas" class="nav-link">{{ruta.name}}</li>
+    </ul>
+  </header>
